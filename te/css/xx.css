@@ -1,0 +1,83 @@
+
+.user .act {
+    background: linear-gradient(rgb(34, 194, 235),rgba(5, 30, 99, 0.836));
+    color: white;
+	padding:10px 12px;
+    border-radius: 0;
+}
+.user .act:hover {
+    background: linear-gradient(rgba(5, 30, 99, 0.836),rgb(34, 194, 235));
+    color: rgb(244, 247, 242);
+    border-radius: 0;
+}
+.user .circle {
+    margin-top: 8px;
+    /* position: absolute; */
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    background: rgba(14, 134, 118, 0.76);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user .circle:hover {
+    color: white;
+    background: rgba(21, 104, 94, 0.76);
+    border-radius: 50%;
+}
+.user .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+.user .nav div {
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: 2px solid grey;
+    background: white;
+}
+.user .nav div:hover {
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(180, 177, 177);
+    background: rgb(226, 224, 224);
+}
+.user .nav div:nth-child(1):hover , .user .nav div i:hover {
+    color: rgb(8, 178, 184);
+    text-shadow: 2px 1px 1px white;
+}
+.user .navActive{
+    right: 0px;
+    display: block;
+    margin-right: 0px;
+    background: white;
+	cursor:pointer;
+}
+.slider {
+	background:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+}
+.slider .fade {
+	max-width:100%;
+}
+.slider .NP {
+	width:100%;
+	position:absolute;
+	top:0px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height:100%;
+}
+.slider .NP a {
+	color:rgb(12, 120, 170);
+}

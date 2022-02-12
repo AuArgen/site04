@@ -1,0 +1,7 @@
+body {
+    background: rgb(218, 216, 216);
+}
+.homeContainer {
+    margin-top: 65px;
+    min-height: 100vh;
+}

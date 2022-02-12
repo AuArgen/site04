@@ -1,0 +1,398 @@
+.test {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.test .newTest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 1000px;
+    padding: 20px 10px;
+    margin-top: 20px;
+    background: rgb(220, 223, 224);
+}
+.test .newTest div {
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test .videoUroki, .til  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 1000px;
+    padding: 20px 10px;
+}
+.test .videoUroki div, .til div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 1000px;
+    padding: 20px 10px;
+}
+.test .videoUroki div a , .til div a {
+    color: white;
+    font-size: 18px;
+    padding: 20px 50px;
+    background: #104f55;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.til div a img {
+    margin-right: 5px;
+}
+.test .videoUroki div a:hover, .til div a:hover {
+    color: #104f55;
+    font-size: 18px;
+    padding: 20px 50px;
+    background: white;
+    box-shadow: 1px 2px 5px black;
+}
+.test .customers .green td {
+    background: rgb(85, 252, 19);
+}
+.test .customers .yellow td {
+    background: rgba(238, 253, 22, 0.925);
+}
+.test .customers .yellow:hover td, .test .customers .green:hover td  {
+    background: white;
+}
+input {
+    margin:15px;
+    width: 80vw;
+    font-size: 18px;
+    border-radius: 10px;
+    border-top: none;
+    padding: 10px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bg {
+    margin-left: 0;
+    width:100vw;
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.1);
+    overflow: auto;
+    padding: 0px 20px;
+}
+.bg .block {
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    background: white;
+    box-shadow: 1px 1px 5px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.bg .block .blocks {
+    width: 175px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background: blue; */
+}
+
+.bg .block .left>div,.bg .block .right>div {
+    width:100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: chartreuse; */
+}
+
+.bg .block .left div:nth-child(2),.bg .block .right div:nth-child(2) {
+    font-size: 5rem;
+    color: rgb(12, 95, 128);
+    cursor: pointer;
+    text-shadow: 3px 4px 5px  gray;
+}
+.bg .block .left div:nth-child(2) {
+    font-size: 1rem;
+    color: rgb(87, 89, 90);
+    cursor: pointer;
+}
+.bg .block .left div i {
+    font-size: 5rem;
+    color: rgb(12, 95, 128);
+    text-shadow: -3px 4px 5px  gray;
+}
+
+.bg .block .left .left_left:hover i,.bg .block .right .right_right:hover i{
+    font-size: 4.8rem;
+    color: rgb(13, 113, 153);
+    text-shadow: 3px 4px 5px  gray,-3px 4px 5px  gray;
+}
+
+.bg .block .left .nonePos i,.bg .block .right .nonePos i{
+    color: rgba(128, 128, 128, 0.445);
+    text-shadow: none;
+    font-size: 5rem;
+    cursor:none;
+}
+.bg .block .left .nonePos:hover i,.bg .block .right .nonePos:hover i {
+    color: rgba(128, 128, 128, 0.445);
+    text-shadow: none;
+    font-size: 5rem;
+}
+.bg .block .center {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 820px;
+    border: 0.5px solid gray;
+    border-top: none;
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-bottom: 220px;
+    flex-direction: column;
+}
+.bg .block .center img {
+    max-width: 93%;
+    display: none;
+    margin: 0 auto;
+}
+.bg .block .center .img_active {
+    max-width: 93%;
+    display: block;
+}
+.bg .block .center .zag {
+    display: block;
+    width: 100%;
+    /* align-items: flex-start; *
+    overflow: auto;
+    /* background: chartreuse; */
+    margin: 0 auto;
+    /* margin-top: 1000px; */
+}
+.bg .block .center .zag img {
+    display: block;
+    margin: 0 auto;
+}
+.bg .block .answer {
+    position: absolute;
+    margin: 0 auto;
+    min-width: 100%;
+    max-width: 100vw;
+    height: 200px;
+    bottom: 0;
+    background: white;
+    overflow: auto;
+    border: 0.3px solid rgba(128, 128, 128, 0.26);
+    border-left: none;
+    border-right: none;
+    z-index: 2;
+    /* padding: 5px 20px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.bg .block .answer h5 {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+}
+
+.bg .block .answer .answers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1150px;
+    margin-left: 20px;
+}
+.bg .block .answer .answers .answer_block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 17%;
+    flex-direction: column;
+
+}
+.bg .block .answer .answers .answer_block .answer_blocks {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.bg .block .answer .answers .answer_block .answer_blocks div {
+    position: relative;
+    width: 20px;
+    height: 18px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg .block .answer .answers .answer_block .answer_blocks div input {
+    position: absolute;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style:inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    cursor: pointer;
+    position: relative;
+}
+
+.bg .block .answer .answers .answer_block .answer_blocks div .label_circle{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: rgb(13, 113, 153);
+    border-radius: 50%;
+}
+.bg .block .answer .answers .answer_block .answer_blocks div .label_rectangle{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: rgb(13, 113, 153);
+    /* border-radius: 50%; */
+}
+
+@media (max-width:760px) {
+	.bg .block {
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    background: white;
+    box-shadow: 1px 1px 5px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+ .bg .block .answer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+   width: 100vw;
+} 
+.test .videoUroki div, .til {
+    display: block;
+    min-width: 100%;
+}  
+
+.test .videoUroki div, .til div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100px;
+    /* background: red; */
+    padding: 0px 0px;
+}
+.test .videoUroki div a, .til div a {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 16px;
+}
+body {
+    /* overflow: auto; */
+    /* background: red; */
+}
+.test .newTest {
+    min-width: 0px;
+    max-width: 110vw;
+    width: 110%;
+    overflow: auto;
+}
+.test .customers{
+       min-width: 0px;
+    max-width: 130vw;
+    width: 130%;
+    overflow-x: auto; 
+    transform: scale(0.7);
+}
+.bg .block {
+    position: relative;
+    width: calc(1170px - 100vw);
+    margin: 0 auto;
+    height: 100%;
+    background: white;
+    box-shadow: 1px 1px 5px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.bg .block .blocks {
+    width: 175px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background: blue; */
+}
+
+.bg .block .center {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    border: 0.5px solid gray;
+    border-top: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-bottom: 220px;
+    flex-direction: column;
+}
+.bg .block .center .img_active {
+    max-width: 200%;
+    display: block;
+    margin: 0 auto;
+}
+.bg .block .center .img_active2 {
+    max-width: 200%;
+    display: block;
+    margin: 0 auto;
+    margin-left: -100%;
+}
+.bg .block .center .zag {
+    /* overflow: auto; */
+    min-height: 450px;
+    max-height: 450px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.bg .block .center .zag img {
+    display: block;
+    margin: 0 auto;
+    max-width: 190%;
+}
+} 
